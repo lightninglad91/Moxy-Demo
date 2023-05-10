@@ -1,0 +1,26 @@
+{
+    "canisters": {
+      "Heartbeat": {
+        "main" : "Backend/src/heartbeat.mo",
+        "type" : "motoko"
+      },
+      "Fileshare": {
+        "main" : "Backend/src/Fileshare/Fileshare.mo",
+        "type" : "motoko"
+      }
+    },
+    "defaults": {
+      "build": {
+        "args": "--compacting-gc",
+        "packtool": "vessel sources"
+      }
+    },
+    "dfx": "0.13.1",
+    "networks": {
+      "local": {
+        "bind": "127.0.0.1:8000",
+        "type": "ephemeral"
+      }
+    },
+    "version": 1
+  }
